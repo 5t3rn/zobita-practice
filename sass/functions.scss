@@ -1,0 +1,19 @@
+
+@mixin top{
+  padding-top: 40px;
+}
+@mixin font{
+  font-size: 20px;
+  color:orangered;
+  font-weight: 800;
+}
+@mixin font-p{
+  font-size: 40px;
+  color: $blue;
+  font-weight: 600;
+}
+@mixin font-logo{
+  color: $blue;
+  box-sizing: border-box;
+  font-weight: 800;
+}

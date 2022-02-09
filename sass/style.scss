@@ -1,0 +1,540 @@
+@import "variable";
+@import "functions";
+
+@font-face {
+  font-family: 'B Yekan';
+  src: url('../B_Yekan/Yekan.ttf') format('truetype');
+}
+
+body {
+  font-family: "B Yekan";
+}
+
+.general {
+  overflow: hidden;
+  background-image: url("../pics/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .navbar {
+    height: 100px;
+    float: left;
+    padding-top: 40px;
+
+    button {
+      background-color: $blue;
+      padding: 15px 35px;
+      border-radius: 10px;
+      border: 1px solid black;
+      box-shadow: none;
+
+      a {
+        color: white;
+        font-size: 20px;
+      }
+    }
+
+    .menu {
+      margin-top: -20px;
+
+      ul {
+
+        list-style-type: none;
+
+        li {
+          text-decoration: none;
+          position: relative;
+          box-sizing: border-box;
+          float: right;
+
+          a {
+            @include font;
+            font-weight: 600;
+            padding-top: -30px;
+            padding-right: 50px;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: orangered;
+          }
+        }
+      }
+    }
+  }
+}
+
+.idea {
+  img {
+    margin-top: 60px;
+    float: left;
+  }
+
+  div {
+    margin-top: 60px;
+    float: left;
+    direction: rtl;
+
+    h1 {
+      color: $blue;
+      font-size: 90px;
+      font-weight: 300;
+    }
+
+    span {
+      color: orangered;
+      font-size: 90px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    button {
+      color: white;
+      background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+      font-size: 25px;
+      border-radius: 10px;
+      padding: 15px 45px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #ff3a33 50%, #ff6c1c);
+    }
+
+  }
+}
+
+.process {
+  margin-top: 100px;
+
+  div {
+    text-align: center;
+
+    h6 {
+      @include font;
+      color: orangered;
+    }
+
+    h2 {
+      @include font-p;
+    }
+
+    span {
+      @include font-p;
+    }
+
+    span + span {
+      color: orangered;
+      font-size: 72px;
+      border-radius: 3px;
+    }
+  }
+
+  .logos {
+    margin-top: 100px;
+    display: flex;
+
+    .col-sm-3 {
+      float: left;
+
+      .odd {
+        @include font-logo;
+        margin-top: -30px;
+        padding-bottom: 60px;
+      }
+
+      .even {
+        @include font-logo;
+        padding-top: 60px;
+      }
+
+      i {
+        background-color: $background;
+        color: orangered;
+        font-size: 45px;
+        border-radius: 100px;
+        padding: 45px 60px;
+        margin-top: 30px;
+        box-sizing: border-box;
+      }
+
+      i:hover {
+        background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+        color: white;
+      }
+
+      img {
+        float: left;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+.service {
+  background-image: url("../pics/serrr.jpg");
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h6 {
+    color: orangered;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h5 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  span {
+    color: orangered;
+    font-size: 72px;
+    border-radius: 3px;
+    padding-left: 560px;
+    text-align: center;
+    margin-top: -100px;
+  }
+
+  .matn {
+    direction: rtl;
+    position: relative;
+    display: flex;
+
+    .col-sm-4 {
+      background-color: #2a3778;
+      border-radius: 5px;
+      margin-right: 10px;
+      padding: 65px 5px;
+      box-sizing: border-box;
+    }
+
+    .col-sm-4:hover {
+      background: linear-gradient(90deg, #ff3a33 50%, #ff6c1c);
+      color: #f2f2f9;
+    }
+
+    h3 {
+      color: white;
+      font-size: 39px;
+      padding-right: 40px;
+      padding-bottom: 20px;
+
+    }
+
+    p {
+      padding: 0 40px;
+      color: #f2f2f9;
+      font-size: 18px;
+    }
+  }
+
+}
+
+.seo {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: right;
+
+  h5 {
+    color: orangered;
+    font-size: 20px;
+  }
+
+  h3 {
+    color: $blue;
+    font-size: 60px;
+  }
+
+  p {
+    color: #454545;
+    font-size: 20px;
+  }
+
+  .tick {
+    padding-top: 30px;
+    float: right;
+
+    h4 {
+      color: $blue;
+      font-size: 30px;
+    }
+  }
+
+}
+
+.project {
+  z-index: -10;
+  margin-top: 200px;
+  padding-top: 100px;
+  background-color: $background;
+  display: flex;
+  position: relative;
+
+  div {
+    text-align: center;
+
+    h6 {
+      @include font;
+      color: orangered;
+    }
+
+    h2 {
+      @include font-p;
+    }
+
+    span {
+      color: orangered;
+      font-size: 72px;
+      border-radius: 3px;
+    }
+  }
+
+  .col-sm-4 {
+    z-index: -2;
+    display: inline-block;
+
+    .col-sm-8 {
+      z-index: +2;
+      margin-top: -50px;
+      padding: 10px 5px;
+      border-radius: 10px;
+      background-color: white;
+      text-align: center;
+
+      a {
+        color: $blue;
+        font-size: 22px;
+      }
+
+      p {
+        color: orangered;
+        font-size: 18px;
+      }
+    }
+
+    img {
+      border-radius: 10px;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+  }
+
+  p {
+    font-size: 80px;
+    color: gray;
+
+    span {
+      font-size: 80px;
+      color: orangered;
+    }
+  }
+}
+
+.costumers {
+  margin-top: 100px;
+  text-align: center;
+
+  div {
+    text-align: center;
+
+    h6 {
+      @include font;
+      color: orangered;
+    }
+
+    h2 {
+      @include font-p;
+    }
+
+    span {
+      color: orangered;
+      font-size: 72px;
+      border-radius: 3px;
+    }
+  }
+
+  img {
+    margin-top: 100px;
+    border-radius: 50%;
+    max-width: 100%;
+    align-content: center;
+  }
+
+  p {
+    color: #454545;
+    font-size: 18px;
+    padding: 50px 25px;
+  }
+
+  .odd {
+    background-color: $background;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: $blue;
+    font-size: 22px;
+  }
+
+  h3 + span {
+    color: orangered;
+    font-size: 18px;
+  }
+
+  .dots {
+    p {
+      font-size: 80px;
+      color: gray;
+
+      span {
+        font-size: 80px;
+        color: orangered;
+      }
+    }
+  }
+}
+
+.call {
+  background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+
+  button {
+    margin: 50px;
+    padding: 20px 40px;
+    background-color: $background;
+    color: black;
+    border-radius: 5px;
+    border-style: none;
+  }
+
+  button:hover {
+    background-color: $blue;
+    color: white;
+  }
+
+  p {
+    padding-top: 25px;
+    color: white;
+    font-size: 40px;
+    direction: rtl;
+  }
+}
+.weblog{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  div {
+    text-align: center;
+
+    h6 {
+      @include font;
+      color: orangered;
+    }
+
+    h2 {
+      @include font-p;
+    }
+
+    span {
+      color: orangered;
+      font-size: 72px;
+      border-radius: 3px;
+    }
+  }
+  img{
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 100%;
+
+  }
+  .date{
+    text-align: right;
+    color: gray;
+    font-size:22px;
+    .color{
+      color: orangered;
+      font-size: 22px;
+    }
+  }
+  h3{
+    float: right;
+    color: $blue;
+    font-size: 20px;
+    text-align: right;
+  }
+  p{
+    float: right;
+    color: #454545;
+    font-size: 18px;
+  }
+  button{
+    background-color:$background;
+    float: right;
+    color: black;
+    padding: 20px 40px;
+    border-style: none;
+    border-radius: 10px;
+  }
+  button:hover{
+    background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+    color: white;
+  }
+}
+.footer{
+  background-color: #191919;
+  .col-sm-3{
+    float: right;
+    padding-top: 100px;
+    p{
+      color: gray;
+      direction: rtl;
+      font-size:20px;
+      float: bottom;
+    }
+    .logo{
+      box-sizing: border-box;
+      float: top;
+      display: block;
+      width: 165px;
+      margin-bottom: 31px;
+      text-align: right;
+      img{
+        float: right;
+        padding-bottom: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+  span{
+    color: $background;
+    font-size: 22px;
+    direction: rtl;
+    padding-right: -50px;
+    text-align: right;
+  }
+  ul{
+    padding-top: 30px;
+    list-style-type: none;
+    float: right;
+    box-sizing: border-box;
+    li{
+      list-style-type: none;
+      line-height: 2;
+      direction: rtl;
+      flex-flow: column;
+      a{
+        color: gray;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: right;
+      }
+      a:hover{
+        color: orangered;
+      }
+  }
+
+  }
+}
