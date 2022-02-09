@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "B Yekan";
+  src: url("../B_Yekan/Yekan.ttf") format("truetype");
+}
+body {
+  font-family: "B Yekan";
+}
+
+.general {
+  overflow: hidden;
+  background-image: url("../pics/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.general .navbar {
+  height: 100px;
+  float: left;
+  padding-top: 40px;
+}
+.general .navbar button {
+  background-color: #1d2860;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: none;
+}
+.general .navbar button a {
+  color: white;
+  font-size: 20px;
+}
+.general .navbar .menu {
+  margin-top: -20px;
+}
+.general .navbar .menu ul {
+  list-style-type: none;
+}
+.general .navbar .menu ul li {
+  text-decoration: none;
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+}
+.general .navbar .menu ul li a {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 800;
+  font-weight: 600;
+  padding-top: -30px;
+  padding-right: 50px;
+}
+.general .navbar .menu ul li a:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+.idea img {
+  margin-top: 60px;
+  float: left;
+}
+.idea div {
+  margin-top: 60px;
+  float: left;
+  direction: rtl;
+}
+.idea div h1 {
+  color: #1d2860;
+  font-size: 90px;
+  font-weight: 300;
+}
+.idea div span {
+  color: orangered;
+  font-size: 90px;
+  font-weight: 300;
+}
+.idea div p {
+  font-size: 20px;
+}
+.idea div button {
+  color: white;
+  background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 15px 45px;
+}
+.idea div button:hover {
+  background: linear-gradient(90deg, #ff3a33 50%, #ff6c1c);
+}
+
+.process {
+  margin-top: 100px;
+}
+.process div {
+  text-align: center;
+}
+.process div h6 {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 800;
+  color: orangered;
+}
+.process div h2 {
+  font-size: 40px;
+  color: #1d2860;
+  font-weight: 600;
+}
+.process div span {
+  font-size: 40px;
+  color: #1d2860;
+  font-weight: 600;
+}
+.process div span + span {
+  color: orangered;
+  font-size: 72px;
+  border-radius: 3px;
+}
+.process .logos {
+  margin-top: 100px;
+  display: flex;
+}
+.process .logos .col-sm-3 {
+  float: left;
+}
+.process .logos .col-sm-3 .odd {
+  color: #1d2860;
+  box-sizing: border-box;
+  font-weight: 800;
+  margin-top: -30px;
+  padding-bottom: 60px;
+}
+.process .logos .col-sm-3 .even {
+  color: #1d2860;
+  box-sizing: border-box;
+  font-weight: 800;
+  padding-top: 60px;
+}
+.process .logos .col-sm-3 i {
+  background-color: #f2f2f9;
+  color: orangered;
+  font-size: 45px;
+  border-radius: 100px;
+  padding: 45px 60px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+.process .logos .col-sm-3 i:hover {
+  background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+  color: white;
+}
+.process .logos .col-sm-3 img {
+  float: left;
+  margin-top: 80px;
+}
+
+.service {
+  background-image: url("../pics/serrr.jpg");
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.service h6 {
+  color: orangered;
+  font-size: 20px;
+  text-align: center;
+}
+.service h5 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+.service span {
+  color: orangered;
+  font-size: 72px;
+  border-radius: 3px;
+  padding-left: 560px;
+  text-align: center;
+  margin-top: -100px;
+}
+.service .matn {
+  direction: rtl;
+  position: relative;
+  display: flex;
+}
+.service .matn .col-sm-4 {
+  background-color: #2a3778;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding: 65px 5px;
+  box-sizing: border-box;
+}
+.service .matn .col-sm-4:hover {
+  background: linear-gradient(90deg, #ff3a33 50%, #ff6c1c);
+  color: #f2f2f9;
+}
+.service .matn h3 {
+  color: white;
+  font-size: 39px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+.service .matn p {
+  padding: 0 40px;
+  color: #f2f2f9;
+  font-size: 18px;
+}
+
+.seo {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  text-align: right;
+}
+.seo h5 {
+  color: orangered;
+  font-size: 20px;
+}
+.seo h3 {
+  color: #1d2860;
+  font-size: 60px;
+}
+.seo p {
+  color: #454545;
+  font-size: 20px;
+}
+.seo .tick {
+  padding-top: 30px;
+  float: right;
+}
+.seo .tick h4 {
+  color: #1d2860;
+  font-size: 30px;
+}
+
+.project {
+  z-index: -10;
+  margin-top: 200px;
+  padding-top: 100px;
+  background-color: #f2f2f9;
+  display: flex;
+  position: relative;
+}
+.project div {
+  text-align: center;
+}
+.project div h6 {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 800;
+  color: orangered;
+}
+.project div h2 {
+  font-size: 40px;
+  color: #1d2860;
+  font-weight: 600;
+}
+.project div span {
+  color: orangered;
+  font-size: 72px;
+  border-radius: 3px;
+}
+.project .col-sm-4 {
+  z-index: -2;
+  display: inline-block;
+}
+.project .col-sm-4 .col-sm-8 {
+  z-index: 2;
+  margin-top: -50px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+.project .col-sm-4 .col-sm-8 a {
+  color: #1d2860;
+  font-size: 22px;
+}
+.project .col-sm-4 .col-sm-8 p {
+  color: orangered;
+  font-size: 18px;
+}
+.project .col-sm-4 img {
+  border-radius: 10px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.project p {
+  font-size: 80px;
+  color: gray;
+}
+.project p span {
+  font-size: 80px;
+  color: orangered;
+}
+
+.costumers {
+  margin-top: 100px;
+  text-align: center;
+}
+.costumers div {
+  text-align: center;
+}
+.costumers div h6 {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 800;
+  color: orangered;
+}
+.costumers div h2 {
+  font-size: 40px;
+  color: #1d2860;
+  font-weight: 600;
+}
+.costumers div span {
+  color: orangered;
+  font-size: 72px;
+  border-radius: 3px;
+}
+.costumers img {
+  margin-top: 100px;
+  border-radius: 50%;
+  max-width: 100%;
+  align-content: center;
+}
+.costumers p {
+  color: #454545;
+  font-size: 18px;
+  padding: 50px 25px;
+}
+.costumers .odd {
+  background-color: #f2f2f9;
+  border-radius: 10px;
+}
+.costumers h3 {
+  color: #1d2860;
+  font-size: 22px;
+}
+.costumers h3 + span {
+  color: orangered;
+  font-size: 18px;
+}
+.costumers .dots p {
+  font-size: 80px;
+  color: gray;
+}
+.costumers .dots p span {
+  font-size: 80px;
+  color: orangered;
+}
+
+.call {
+  background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+}
+.call button {
+  margin: 50px;
+  padding: 20px 40px;
+  background-color: #f2f2f9;
+  color: black;
+  border-radius: 5px;
+  border-style: none;
+}
+.call button:hover {
+  background-color: #1d2860;
+  color: white;
+}
+.call p {
+  padding-top: 25px;
+  color: white;
+  font-size: 40px;
+  direction: rtl;
+}
+
+.weblog {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.weblog div {
+  text-align: center;
+}
+.weblog div h6 {
+  font-size: 20px;
+  color: orangered;
+  font-weight: 800;
+  color: orangered;
+}
+.weblog div h2 {
+  font-size: 40px;
+  color: #1d2860;
+  font-weight: 600;
+}
+.weblog div span {
+  color: orangered;
+  font-size: 72px;
+  border-radius: 3px;
+}
+.weblog img {
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.weblog .date {
+  text-align: right;
+  color: gray;
+  font-size: 22px;
+}
+.weblog .date .color {
+  color: orangered;
+  font-size: 22px;
+}
+.weblog h3 {
+  float: right;
+  color: #1d2860;
+  font-size: 20px;
+  text-align: right;
+}
+.weblog p {
+  float: right;
+  color: #454545;
+  font-size: 18px;
+}
+.weblog button {
+  background-color: #f2f2f9;
+  float: right;
+  color: black;
+  padding: 20px 40px;
+  border-style: none;
+  border-radius: 10px;
+}
+.weblog button:hover {
+  background: linear-gradient(90deg, #ff6c1c 50%, #ff3a33);
+  color: white;
+}
+
+.footer {
+  background-color: #191919;
+}
+.footer .col-sm-3 {
+  float: right;
+  padding-top: 100px;
+}
+.footer .col-sm-3 p {
+  color: gray;
+  direction: rtl;
+  font-size: 20px;
+  float: bottom;
+}
+.footer .col-sm-3 .logo {
+  box-sizing: border-box;
+  float: top;
+  display: block;
+  width: 165px;
+  margin-bottom: 31px;
+  text-align: right;
+}
+.footer .col-sm-3 .logo img {
+  float: right;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+.footer span {
+  color: #f2f2f9;
+  font-size: 22px;
+  direction: rtl;
+  padding-right: -50px;
+  text-align: right;
+}
+.footer ul {
+  padding-top: 30px;
+  list-style-type: none;
+  float: right;
+  box-sizing: border-box;
+}
+.footer ul li {
+  list-style-type: none;
+  line-height: 2;
+  direction: rtl;
+  flex-flow: column;
+}
+.footer ul li a {
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: right;
+}
+.footer ul li a:hover {
+  color: orangered;
+}
+
+/*# sourceMappingURL=style.css.map */
